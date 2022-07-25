@@ -1,0 +1,509 @@
+/* RESET */
+* {
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat";
+}
+
+body {margin: 0}
+
+a:hover {text-decoration: none}
+
+html {scroll-behavior: smooth}
+
+/* GENERAL */
+
+
+/* Scroll bar  */
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #1f1f1f; 
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #1f1f1f; 
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Texts  */
+h2, .rdc-contact-button {line-height: 1}
+
+h2,h3 {font-weight: 900}
+
+h2 {font-size: 40px}
+
+h3 {font-size: 30px}
+
+p, ul {font-size: 14px}
+
+.rdc-contact-button,
+#rdc-click-me,
+.rdc-or-box span,
+.rdc-logo-footer span {
+	font-family: "Caveat";
+}
+
+.rdc-contact-button {font-size: 60px}
+
+
+/* Sections  */
+.rdc-section-bg {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.rdc-section-inner {padding: 5rem 0}
+.rdc-section-box {padding: 4rem 0}
+
+.rdc-section-box-1, 
+.rdc-section-box-2,
+.rdc-section-box-3, h2 {width: 90%}
+
+.rdc-section-box-1, h2 {max-width: 700px}
+
+.rdc-section-box-2 {max-width: 1000px}
+
+.rdc-section-box-3 {max-width:800px}
+
+.rdc-section {position: relative}
+
+/* Buttons  */
+.rdc-neon-buttons {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+.rdc-neon-buttons-left {left: 5%}
+
+.rdc-neon-buttons-right {right: 5%}
+
+.rdc-neon-buttons .rdc-button-circle {
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	transition: all .5s;
+}
+
+.rdc-neon-buttons .rdc-button-circle span {
+	display:none;
+	font-size: 10px;
+	align-items: center;
+	height: 100%;
+	padding: 5px 10px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.rdc-neon-buttons-right:hover a {justify-content: flex-end}
+
+.rdc-neon-buttons-right:hover {align-items: flex-end}
+
+.rdc-neon-buttons a:hover .rdc-button-circle  {
+	width: 100%;
+	overflow: hidden;
+}
+
+.rdc-neon-buttons a .rdc-button-circle span {transition: all 1s}
+
+.rdc-neon-buttons a:hover .rdc-button-circle span {display: flex}
+
+.rdc-neon-buttons a {border-radius: 100px}
+
+
+/* Colors  */
+.rdc-bg-1 {background-color:#1f1f1f}
+.rdc-bg-2 {background-color:#141414}
+.rdc-bg-3 {background-color:#262626}
+.rdc-bg-4 {background-color:#FF437B}
+.rdc-bg-5 {background-color:#DAF277}
+.rdc-bg-6 {background-color:#FF59F8}
+.rdc-bg-7 {background-color:#67FF92}
+.rdc-bg-8 {background-color:#181818}
+.rdc-bg-9 {background-color:#222222}
+.rdc-bg-10 {background-color:#1D1D1D}
+.rdc-bg-11 {background-color:#212121}
+.rdc-bg-12 {background-color:#1B1B1B}
+.rdc-bg-13 {background-color:#111111}
+
+#rdc-header-section *,
+#rdc-contact-section button {color: #fff}
+#rdc-why-section *,
+.rdc-fillout-box span,
+.rdc-menu-box:first-child {color: #FF437B}
+#rdc-portfolio-section *,
+#rdc-contact-section h2,
+.rdc-menu-box:nth-child(2) {color: #DAF277}
+#rdc-skills-section *,
+.rdc-or-box span,
+.rdc-menu-box:nth-child(3) {color: #FF59F8}
+#rdc-reviews-section *, 
+#rdc-reviews-section p.rdc-reviews-author,
+.rdc-email-me-box *,
+.rdc-menu-box:nth-child(4)  {color: #67FF92}
+
+#rdc-why-section p {color: #FFB8CD}
+#rdc-portfolio-section p,
+#rdc-portfolio-section .rdc-portfolio-subheading {color: #F6FFD1}
+#rdc-skills-section .rdc-skills-gauge span {color: #FF8DFA}
+
+#rdc-reviews-section li,
+#rdc-reviews-section p,
+#rdc-reviews-section span,
+.rdc-reviews-author-info {color: #C9FFD8}
+
+#rdc-contact-section button {background-color: #FF437B}
+#rdc-portfolio-section .rdc-portfolio-btn,
+#rdc-contact-section button {color: #030303}
+
+
+#rdc-portfolio-section .carousel-indicators li,
+#rdc-reviews-section .carousel-indicators li {background-color: #000}
+
+#rdc-portfolio-section .carousel-indicators .active,
+#rdc-portfolio-section .rdc-portfolio-btn,
+.rdc-portfolio-box ::-webkit-scrollbar-thumb  {
+	background-color: #DAF277;
+}
+
+#rdc-reviews-section .carousel-indicators .active {background-color: #67FF92}
+
+#rdc-menu-section a.rdc-bg-11:hover {background-color: #1f1f1f}
+#rdc-menu-section a.rdc-bg-1:hover {background-color: #1e1e1e}
+#rdc-menu-section a.rdc-bg-10:hover {background-color: #1a1a1a}
+#rdc-menu-section a.rdc-bg-12:hover {background-color: #191919}
+
+#rdc-menu-section a.rdc-bg-11:hover span,
+#rdc-why-section .rdc-contact-button:hover {text-shadow: 0 0 15px rgb(255 66 123 / 63%)}
+#rdc-menu-section a.rdc-bg-1:hover span,
+#rdc-portfolio-section .rdc-contact-button:hover {text-shadow: 0 0 15px rgb(218 242 119 / 63%)}
+#rdc-menu-section a.rdc-bg-10:hover span,
+#rdc-reviews-section .rdc-contact-button:hover {text-shadow: 0 0 15px rgb(103 255 146 / 63%)}
+#rdc-menu-section a.rdc-bg-12:hover span,
+#rdc-skills-section .rdc-contact-button:hover {text-shadow: 0 0 15px rgb(255 89 248 / 63%)}
+
+#rdc-portfolio-section .rdc-portfolio-btn:hover {background-color: #c0d854}
+
+#rdc-why-bg, #rdc-skills-bg {background-color: #242424}
+#rdc-portfolio-bg {background-color: #1c1c1c}
+
+@keyframes clickMe {
+	0% {color: #FF437B;}
+	25% {color: #FF437B}
+	50% {color: #DAF277}
+	75% {color: #FF59F8}
+	100% {color: #67FF92}
+}
+
+/* HEADER SECTION */
+
+#rdc-header-section {height: 750px}
+
+#rdc-header-section,
+.rdc-logo-link {position:  relative}
+
+#rdc-header-section  #rdc-logo {
+	font-size: 300px;
+	font-weight: 900;
+	line-height: .8;
+}
+#rdc-name {
+	font-size: 20px;
+	font-weight: 100;
+	position: absolute;
+	bottom: -15px;
+	left: 14px;
+}
+
+#rdc-click-me-box {
+	position: absolute;
+	font-size: 60px;
+	right: 15%;
+	top: 25%;
+}
+.rdc-click-me-box-inner {position: relative}
+
+#rdc-click-me {animation: clickMe 2s infinite}
+
+#rdc-header-section img {width: 300px}
+
+img#rdc-arrow {
+	width: 80px;
+	position: absolute;
+	left: -48%;
+	top: 65%;
+}
+
+/* MENU SECTION */
+.rdc-menu-box {height: 300px}
+
+.rdc-menu-box span {
+	font-size: 40px;
+	font-weight: 900;
+}
+
+
+/* PORTFOLIO SECTION */
+.rdc-portfolio-subheading {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.rdc-portfolio-img img {width: 100%}
+
+.rdc-portfolio-box {padding: 0}
+
+.rdc-portfolio-box .col-md-6 { height: 500px}
+
+.rdc-portfolio-box .col-md-6:first-child {overflow-y: scroll}
+
+#rdc-portfolio-section .rdc-portfolio-btn {
+	font-weight: 900;
+	transition: all .5s;
+}
+
+
+/* SKILLS SECTION */ 
+.rdc-skills-gauge span {font-weight: 700}
+
+.rdc-skills-gauge div:nth-child(2) span {
+	background-color: #181818;
+	height: 10px;
+	border-radius: 100px;
+
+}
+
+.rdc-skills-gauge div:nth-child(2) span.d-flex {width: 100%}
+
+.rdc-skills-gauge div:nth-child(2) span span {
+	background-color: #FF8DFA;
+	display: flex;
+	height: 8px;
+}
+
+.rdc-skills-85 {width: 85%}
+.rdc-skills-90 {width: 90%}
+.rdc-skills-95 {width: 95%}
+
+/* REVIEWS SECTION */ 
+
+.rdc-reviews-author,
+.rdc-reviews-author-info p {
+	font-weight: 700;
+}
+
+.rdc-reviews-author-info p {line-height: 1}
+
+.rdc-reviews-author-info p,
+.rdc-reviews-author-info span {font-size: 12px}
+
+.rdc-reviews-author {
+	font-size: 20px;
+}
+.rdc-neon-quote {width: 60px}
+
+/* CONTACT SECTION */ 
+
+label {display: none}
+
+.rdc-email-me-box span {font-size: 12px}
+
+.rdc-email-me-box p,
+.rdc-fillout-box span {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.rdc-or-box span {font-size: 60px}
+
+#rdc-contact-section input,
+#rdc-contact-section select,
+#rdc-contact-section textarea {
+	background-color: #2F2F2F;
+	border:  0;
+	border-radius: 0;
+	color: #fff;
+}
+
+#rdc-contact-section select option:disabled {color: #2F2F2F}
+
+#rdc-contact-section button {
+	border-radius: 0;
+	text-transform: uppercase;
+	font-weight: 900;
+	transition: all .5s;
+}
+
+#rdc-contact-section button:hover {background-color: #e23769}
+
+.rdc-review-box {min-height: 460px}
+
+/* FOOTER SECTION */ 
+footer img {width: 150px}
+
+.rdc-logo-footer {
+	position: relative;
+	width: fit-content;
+}
+.rdc-logo-footer span {
+	position: absolute;
+	left:  0;
+	bottom: 0;
+}
+
+.rdc-logo-footer span {
+	position: absolute;
+	left: -10px;
+	bottom: -30px;
+	font-size: 33px;
+	transform: rotate(-10deg);
+	animation: clickMe 2s infinite;
+}
+
+@media only screen and (max-width: 991px) {
+	#rdc-header-section #rdc-logo {
+		font-size: 250px;
+	}
+
+	#rdc-click-me-box {
+		font-size: 50px;
+		right: 8%;
+		top: 28%;
+	}
+	img#rdc-arrow {
+		left: -55%;
+	}
+	.rdc-neon-buttons {
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 10px;
+		top: unset;
+		justify-content: center;
+	}
+	.rdc-menu-box {height: 90px}
+
+
+	main {position: relative}
+	section#rdc-menu-section {position: sticky}
+
+	section#rdc-menu-section {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+		width: 100%;
+	}
+
+	.rdc-menu-box span {font-size: 25px}
+
+	main {padding-bottom: 180px}
+
+	#rdc-portfolio-section .rdc-portfolio-btn {text-align: center}
+}
+
+@media only screen and (max-width: 767px) {
+	h2 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	.rdc-contact-button {font-size: 50px}
+	.rdc-portfolio-box .col-md-6:first-child {height: 300px}
+	.rdc-portfolio-box .col-md-6:nth-child(2) {height: auto}
+	.rdc-portfolio-box .rdc-project-info {padding: 20px}
+	.rdc-portfolio-box .rdc-project-info {padding-bottom: 40px}
+	#rdc-header-section #rdc-logo {font-size: 200px}
+
+	#rdc-name {
+		font-size: 18px;
+		bottom: -18px;
+		left: 8px;
+	}
+
+	#rdc-click-me-box {font-size: 40px}
+
+	img#rdc-arrow {width: 60px}
+
+	.rdc-menu-box {padding: 20px}
+
+	#rdc-header-section {height: 600px}
+
+	#rdc-click-me-box {
+		right: 16%;
+		top: 22%;
+	}
+	.rdc-section-inner {padding: 4rem 0}
+
+	.rdc-menu-box span {font-size: 18px}
+
+}
+
+@media only screen and (max-width: 350px) {
+
+	/* Texts  */
+	h2 {font-size: 25px}		
+	.rdc-contact-button {font-size: 40px}
+
+	/* Section  */
+	.rdc-section-box div {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.rdc-section-box div.rdc-portfolio-img,
+	.rdc-portfolio-box .rdc-project-info div {padding: 0}
+
+	.rdc-section-box .rdc-skills-gauge,
+	.rdc-section-box .form-group {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.rdc-portfolio-box .rdc-project-info {padding: 10px}
+
+	.rdc-menu-box span {font-size: 15px}
+	#rdc-header-section #rdc-logo {font-size: 140px}
+
+	#rdc-click-me-box {top: 28%}
+
+	.rdc-menu-box {
+		justify-content: flex-start;
+		padding: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
